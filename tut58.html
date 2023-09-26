@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js SetTimeout and ClearTimeout</title>
+    <style>
+        #demo{
+            background-color: lightcyan;
+            padding: 2rem;
+            border: 2px solid black;
+            border-radius: 12px;
+            font-size: large;
+            font-weight: 600;
+            color: rgb(54, 54, 54);
+            box-shadow: 3px 3px 10px rgba(43, 43, 43, 0.288);
+            text-align: center;
+            text-shadow: 1px 1px 3px rgba(41, 41, 41, 0.596);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        Js SetTimeout and ClearTimeout
+        <p id="demo"></p>
+    </div>
+
+    <script>
+        // setTimeout --> allows us to run a function once after the interval of time.
+        // clearTimeout --> allows us to run a function repeatedly after some interval of time
+
+        function greet(name) {
+            console.log('hello GM ' + name);
+        }
+        // setTimeout(greet, 1000);
+        // if we want to pass argument then we can write like this:
+        // setTimeout(greet, 2000,'dfkjsa;');
+        // for(let i = 1000; i < 10001; i += 1000){
+        //     setTimeout(() => {
+        //         console.log('i am printed after ' + i + 'sec.');
+        //     }, i);
+        // }
+        // setInterval(greet, 1000, 'harry');
+        const demo = document.getElementById('demo');
+
+        function displayTime(){
+            time = new Date();
+            // console.log(time);
+            demo.innerHTML = time;
+        }
+        setInterval(displayTime,1000);
+        
+    </script>
+</body>
+
+</html>

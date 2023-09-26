@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700;900&family=Raleway:wght@200;400;500;700;800&display=swap');
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #191919;
+    color: #fcfcfc;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* UTILITIES START */
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+p{
+    color: rgba(255, 255, 255, 0.925);
+    font-family: 'Poppins', sans-serif;
+    line-height: 20px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+.btn{
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn:hover{
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.726);
+    color: #ff6600;
+    border: 2px solid #ff6600;
+}
+.btn:active{
+    transform: scale(0.99);
+}
+.heading{
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem 0;
+    margin: 0 0 1rem 0;
+}
+.section{
+    width: 100%;
+    height: auto;
+    padding: 2rem 1rem 3rem;
+}
+/* UTILITIES END */
+
+/* NAVBAR STARTS */
+#navbar{
+    background-color: transparent;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    height: 4rem;
+}
+.left{
+    color: #ff6600;
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    padding: 0 10px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.logo{
+    flex-direction: column;
+    
+}
+.logo span{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2px;
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+.nav-items{
+    padding: 0.5rem 1rem;
+    margin: 0 10px 0 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+.nav-items a:hover{
+    color: #ff6600;
+}
+/* NAVBAR ENDS */
+
+
+/* INTRO SECTION START */
+#introSection{
+    min-height: 600px;
+}
+#introSection::before{
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(255, 255, 255, 0) ), url('../static/images/mainBg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    min-height: calc(600px + 4rem);
+    z-index: -1;
+}
+.main-heading{
+    font-size: 4rem;
+    font-weight: 800;
+}
+.register{
+    text-align: center;
+}
+/* INTRO SECTION END */
+
+
+/* OUR MISSION SECTION START */
+#missionSection{
+    /* border: 2px solid yellow; */
+}
+.cards-container{
+    justify-content: space-evenly;
+}
+.card{
+    flex-direction: column;
+    text-align: left;
+    width: 25%;
+    border-radius: 24px;
+    min-height: 400px;
+    overflow: hidden;
+    padding: 0 1rem;
+    background-color: #4d4d4dd1;
+    box-shadow: 3px 3px 15px #000000b5;
+}
+.card h3{
+    /* text-align: center; */
+    font-weight: 500;
+    margin: 8px 0;
+    padding-bottom: 7px;
+    border-bottom: 2px solid #737373;
+}
+.card-img{
+    width: 100%;
+    height: 150px;
+}
+.card-img img{
+    height: 100%;
+}
+.card-content{
+    margin: 8px 0;
+    padding: 1rem 0;
+}
+
+/* OUR MISSION SECTION END */
+
+
+/* SPONSORS SECTION STARTS */
+#sponsorsSection{
+
+}
+.sponsors-container{
+    /* border: 2px solid red; */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0 5rem;
+}
+.sponsors-img{
+    /* border: 2px solid yellow; */
+    width: 150px;
+    height: 150px;
+    padding: 1rem;
+}
+.sponsors-img img{
+    height: 100%;
+}
+/* SPONSORS SECTION ENDS */
+
+
+/* FOOTER STARTS */
+footer{
+    height: 80px;
+    background-color: black;
+    
+}

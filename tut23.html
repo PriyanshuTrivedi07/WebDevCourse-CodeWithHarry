@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        header{
+            margin: auto;
+            width: 1000px;
+        }
+
+        .navbar {
+            background-color: transparent;
+            border-radius: 33px;
+
+        }
+
+        .navbar ul {
+            overflow: auto;
+            list-style: none;
+            margin-left: 44px;
+
+        }
+
+        li {
+            float: left;
+            padding: 18px 36px;
+
+
+        }
+
+        a {
+            text-decoration: none;
+            padding: 2px;
+            color: black;
+        }
+
+        a:hover {
+            color: white;
+            background-color: black;
+            padding: 5px;
+            margin: 5px;
+            border-radius: 10px;
+        }
+
+        .searchbox {
+            float: right;
+            padding: 16px 120px 16px 29px;
+            margin: 0px 20px 0px 0px;
+
+        }
+
+        input {
+            color: rgb(0, 0, 0);
+            background-color: white;
+            border-radius: 4px;
+            border: 1px solid rgb(102, 102, 102);
+            padding: 3px 18px;
+            width: 140px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="searchbox">
+                    <input type="search here" placeholder="Search Here">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+</body>
+
+</html>

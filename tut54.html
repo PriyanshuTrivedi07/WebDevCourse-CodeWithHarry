@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert, Prompt, Confirm in Js</title>
+</head>
+<body>
+    <div id="container">
+        Interaction using Alert, Confirm , Prompt in js
+    </div>
+    <script>
+        //Alert
+        // alert("Are you sure to delete ?"); // does not return anything
+
+        //Prompt
+        let name = prompt("What is your name ?", 'Guest');
+        document.getElementById('container').innerHTML = 
+        `Welcome ${name}....`;
+    </script>
+</body>
+</html>

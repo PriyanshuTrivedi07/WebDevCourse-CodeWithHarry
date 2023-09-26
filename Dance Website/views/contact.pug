@@ -1,0 +1,23 @@
+extends base.pug
+
+block title 
+    title Trived Dance Academy - Contact
+block scripts 
+    script(src='/static/js/index.js')
+block style
+    style
+      include ../static/css/style.css
+      include ../static/css/contact.css
+
+block content 
+    section#contact-section.container.section.flex
+        h1 Contact Us
+        div.myform 
+            form(action="/contact", method = "post", class = "flex")
+                input(type="text", class = "myInput", name = "name", id = "name" placeholder = "Name")
+                input(type="email", class = "myInput", name = "email", id = "email" placeholder = "Your email address")
+                input(type="text", class = "myInput", name = "age", id = "age" placeholder = "Age")
+                input(type="text", class = "myInput", name = "gender", id = "gender" placeholder = "Gender")
+                textarea#address.myInput(name='address' rows='3' cols='50' placeholder='Addres')
+                button.btn 
+                    | Submit

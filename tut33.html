@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After pseudo selectors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+    <style>
+        
+        body {
+            background-color: #000000;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            /* background: url('https://source.unsplash.com/random/1600x900?food');
+            opacity: 1px; */
+        }
+        header::before{
+            content: '';
+            background: url('https://source.unsplash.com/random/1600x900?food');
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+            background-repeat: no-repeat;
+
+        }
+
+        .navigation {
+            display: flex;
+            flex-direction: row;
+        }
+
+        ul {
+            font-size: 20px;
+            font-family: 'Teko', sans-serif;
+            /* border: 2px solid red; */
+            list-style: none;
+            padding: 3px 3px;
+            margin: 3px 3px;
+            text-shadow: 4px 4px 4px rgb(0, 0, 0);
+            text-transform: uppercase;
+
+        }
+
+        li {
+            padding: 5px 31px;
+
+        }
+
+        section {
+            height: 350px;
+            margin: 10px;
+            font-size: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 21px;
+            justify-content: baseline;
+        }
+
+        /* section::before{
+            content: 'this is a content';
+        }
+        section::after{
+            content: 'this is a content';
+        } */
+        h2 {
+            font-size: 3rem;
+            font-family: 'Teko', sans-serif;
+            text-shadow: 4px 4px 4px rgb(0, 0, 0);
+
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">services</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <section>
+        <h2>Welcome to Coding world</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore iure corrupti est aspernatur quam,
+            molestias quo ducimus impedit, ad optio qui beatae modi eius inventore, pariatur ipsa totam a eos
+            necessitatibus id. Temporibus amet dolorum, sunt quis explicabo odio voluptas vel qui laboriosam
+            ducimus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae corrupti eius, cumque natus odit
+            accusantium totam beatae excepturi quas neque nemo consequuntur quos provident veritatis accusamus
+            asperiores, aspernatur nulla aliquam? Laborum quidem deleniti dolorum. Dolores, iusto vel soluta dolorum
+            expedita dolor deleniti aspernatur veniam perspiciatis sed modi libero reprehenderit? Enim nesciunt
+            voluptatibus eum possimus, obcaecati perspiciatis placeat aliquam at, sed quas error iste doloremque neque
+            rerum maxime distinctio ipsum perferendis, iure esse recusandae fuga quidem et quia! Modi ea similique minus
+            aspernatur obcaecati fugiat tempora veritatis qui totam! Saepe provident officiis esse minus quas dolor
+            ipsum in repellat minima? Ex veniam hic corporis pariatur, beatae dolores minus corrupti harum placeat, modi
+            amet totam dolore sequi eius fugit porro eligendi nulla obcaecati reprehenderit reiciendis, error quas
+            perspiciatis esse. Quasi inventore, beatae possimus veritatis, libero illo laborum unde id error iure
+            doloremque voluptates fuga obcaecati magni odit magnam laudantium velit autem aspernatur molestiae? Ad est
+            commodi laudantium debitis suscipit unde aperiam et quas impedit ducimus minima corporis non officia iure
+            necessitatibus optio, fuga minus quo recusandae earum. Ut eaque necessitatibus officiis quibusdam suscipit?
+            Ad quaerat voluptas unde delectus iste necessitatibus ducimus eligendi laborum eum recusandae nesciunt et
+            reiciendis labore, numquam totam debitis, minima perspiciatis modi quam. Quis nesciunt culpa magni quia
+            deleniti laborum quam odio voluptatibus distinctio. Vel debitis tempora blanditiis labore, nostrum iusto nam
+            amet. Unde hic velit vero illum facere magnam harum voluptas atque eos, expedita dignissimos nihil nesciunt
+        </p>
+    </section>
+    <hr>
+</body>
+
+</html>

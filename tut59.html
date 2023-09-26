@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Dates</title>
+</head>
+
+<body>
+    <div class="container">
+        this is a container
+    </div>
+
+    <script>
+        // console.log('this is javascipt');
+        // let now = new Date();
+        // console.log(now);
+
+        // let mydate = new Date(0);
+        // let mydate = new Date('2019-12-3');
+        // let mydate = new Date(year , month , date, hours, minute, second, milliseconds);
+        // let mydate = new Date(2014, 8, 13, 1, 23, 4);
+        let mydate = new Date();
+        console.log(mydate);
+
+        //Date Methods
+        let yr = mydate.getFullYear();
+        console.log(yr);
+        let date = mydate.getDate();
+        console.log(date);
+        let tday = mydate.getDay();
+        console.log(tday);
+
+        // mydate.setDate(3);
+        // mydate.setTime(1691474980585);
+        console.log(mydate.toDateString());
+        // console.log(mydate);
+        
+
+    </script>
+</body>
+
+</html>

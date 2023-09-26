@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation and Keyframes</title>
+    <style>
+        .container {
+            /* background-color: lightgreen; */
+        }
+
+        .box {
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            padding: 33px 33px;
+            position: relative;
+            animation-name: priy1;
+            /* animation-name: priy2; */
+            /* animation-duration: 5s; */
+            /* animation-iteration-count: 2; */
+            /* animation-fill-mode: forwards; */
+            /* animation-timing-function: ease-out; */
+            /* animation-delay: 2s; */
+            /* animation-direction: reverse; */
+
+
+    /* Animation short-hand  */
+            /* animation: animation-name animation-duration animation-timing-funtion animation-delay animation-iteration-count animation-fill-mode; */
+           
+            animation: priy2 4s none 2s infinite ;
+        }
+
+        @keyframes priy2 {
+            0% {
+                top: 0px;
+                left: 0px;
+                background-color: white;
+            }
+
+            20% {
+                top: 250px;
+                left: 0px;
+                background-color: black;
+                color: white;
+            }
+
+            40% {
+                top: 250px;
+                left: 250px;
+                background-color: blue;
+                color: orangered;
+
+            }
+
+            60% {
+                top: 0px;
+                left: 250px;
+                background-color: yellow;
+                color: black;
+            }
+            80% {
+                top: 0px;
+                left: 0px;
+                background-color: green;
+            }
+        }
+
+        @keyframes priy1 {
+            from {
+                width: 200px;
+                /* background-color: white; */
+                color: black;
+            }
+
+            to {
+                width: 400px;
+                background-color: black;
+                color: white;
+                box-shadow: 5px 5px 10px black;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+</body>
+
+</html>

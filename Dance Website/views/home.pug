@@ -1,0 +1,53 @@
+extends base.pug
+block title 
+    title Trived Dance Academy - Home
+block scripts 
+    script(src='/static/js/index.js')
+block style
+    style
+      include ../static/css/style.css
+
+block content 
+
+    section#introSection.container.section.flex 
+        .main-heading 
+            | Get Fit . <span>Learn To Dance .</span>
+            .register 
+                button.btn Registor Now
+    section#missionSection.container.section 
+        h2.heading Our Mission
+        .cards-container.flex 
+            div.card.flex 
+                h3 Dance Performance
+                .card-img.flex
+                    img(src="../static/images/ourmission1.png", alt="")
+                .card-content
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis laboriosam molestias optio earum fugiat quis illum, odio temporibus et perspiciatis ut ratione minus!
+            div.card.flex 
+                h3 Dance the way you Like
+                .card-img.flex
+                    img(src="../static/images/ourmission2.png", alt="")
+                .card-content
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis laboriosam molestias optio earum fugiat quis illum, odio temporibus et perspiciatis ut ratione minus!
+            div.card.flex 
+                h3 Expert Teaching
+                .card-img.flex
+                    img(src="../static/images/ourmission3.png", alt="")
+                .card-content
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis laboriosam molestias optio earum fugiat quis illum, odio temporibus et perspiciatis ut ratione minus!
+             
+    
+    section#sponsorsSection.container.section 
+        h2.heading Our Sponsors 
+        .sponsors-container.flex 
+            .sponsors-img.flex 
+                img(src="../static/images/sponsor1.png", alt="")
+            .sponsors-img.flex 
+                img(src="../static/images/sponsor3.png", alt="")
+            .sponsors-img.flex 
+                img(src="../static/images/sponsor2.png", alt="")
+            .sponsors-img.flex 
+                img(src="../static/images/sponsor4.png", alt="")
+            .sponsors-img.flex 
+                img(src="../static/images/sponsor5.png", alt="")
+

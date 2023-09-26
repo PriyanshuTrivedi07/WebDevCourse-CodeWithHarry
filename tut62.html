@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Tutorial</title>
+</head>
+<body>
+    <div class="container">
+        this is a container
+    </div>
+    <script>
+        let jsonObj = {
+            name: 'harry',
+            channel : 'codewithharry',
+            friend: 'Rohan das', 
+            food : 'bhindi'
+        }
+        console.log(jsonObj);
+        // stringyfy function : converts a object into string and then we can use all the string functions on it
+        //                    : it takes a valid js object as argument 
+        let myJsonStr = JSON.stringify(jsonObj);
+        console.log(myJsonStr);
+
+        // console.log(typeof(myJsonStr));
+        myJsonStr = myJsonStr.replace('bhindi', 'paneer');
+        console.log(myJsonStr);
+
+        // .parse function : takes a valid JSON string and convert it to a object
+        newJsonObj = JSON.parse(myJsonStr);
+        console.log(newJsonObj);
+    </script>
+</body>
+</html> 

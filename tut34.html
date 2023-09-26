@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow Text shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            /* border: 2px solid red; */
+            margin: 8px 17px;
+            padding: 19px 20px;
+            background-color: rgb(255, 162, 162);
+            /* box-shadow: 5px 5px 10px #585858; */
+
+            /* Syntax for box-shadow:   */
+
+            /* box-shadow: offset-x offset-y color; */
+            /* box-shadow: offset-x offset-y blur-radius color; */
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+            
+
+
+        }
+       .card h2{
+            text-shadow: 4px 3px 2px #000000;
+            /* display: inline; */
+            color: white;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>card1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, similique! Natus mollitia, laborum
+                accusamus quaerat fugit enim sint sunt error tempore vitae aliquid a illum placeat sequi. Provident, in
+                odit velit debitis ad obcaecati.</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium a non reprehenderit cupiditate saepe
+                nulla ab quas maiores rem, ad, id assumenda, molestiae dicta sunt sint. Repellat magni labore totam nihil,
+                eos sed sapiente</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium a non reprehenderit cupiditate saepe
+                nulla ab quas maiores rem, ad, id assumenda, molestiae dicta sunt sint. Repellat magni labore totam nihil,
+                eos sed sapiente.</p>
+        </div>
+    </div>
+</body>
+
+</html>

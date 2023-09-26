@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listners in Js</title>
+    <style>
+        .parag{
+            height: 420px;
+            overflow: hidden;
+            transition: all 0.4s ;
+        }
+        #btn{
+            padding: 7px 15px;
+            background-color: tomato;
+            color: white;
+            border: 2px solid white;
+            border-radius: 5px;
+            box-shadow: 3px 3px 0 rgb(234, 35, 0);
+            transition: all 0.1s ease-in-out;
+            cursor: pointer;
+        }
+        #btn:hover{
+            background-color: rgb(246, 197, 197);
+            color: tomato;
+        }
+        #btn:active{
+            box-shadow: 0px 0px;
+            transform: translate(3px,3px);
+        }
+        .hide{
+            height: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Event Listners in Js</h1>
+        <p id="para" class="parag">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque assumenda nisi doloremque deserunt totam quisquam nesciunt laborum sapiente repellendus iure veniam, saepe quibusdam nemo officiis reiciendis quo quis corporis molestias laboriosam pariatur blanditiis ea aspernatur magni? In voluptas animi, quo aliquam, molestias unde possimus nihil nulla eum facilis quod ad non quisquam culpa sequi, molestiae amet minima doloremque. Quibusdam iste voluptatibus veniam sit sint aliquid, odit magnam accusantium omnis tempora dolor quasi, ipsum voluptas pariatur quia sunt libero quaerat dicta commodi architecto laboriosam amet blanditiis odio laudantium? Quod labore ratione animi reprehenderit ducimus dolor. Minima quisquam provident, sunt officiis quidem totam consequuntur unde alias illo fuga necessitatibus quos mollitia a ea veritatis sed error ducimus perspiciatis dignissimos distinctio, veniam natus quo temporibus ut. Quae neque doloremque, tempora, error ut consequuntur totam eius deserunt ipsa a nesciunt molestiae est ipsam natus vero illo unde! Laudantium nisi consectetur debitis quae, consequatur quasi quibusdam explicabo modi perferendis dolorem sed magni non ea sequi? Natus, omnis deleniti qui consequatur ducimus ut beatae magni, expedita, nostrum nulla labore sed eaque laborum reprehenderit asperiores? Laboriosam fuga sint doloremque porro aperiam a. Minus aliquam reprehenderit tempora voluptatum veritatis fugiat sed, mollitia nemo. Nam molestiae dicta reiciendis dignissimos cumque quasi ipsum. Voluptatum rerum repellendus aliquam. Ipsa aspernatur velit quas ab atque. Similique consectetur non temporibus corporis animi officiis ipsum officia quisquam atque praesentium deleniti perferendis, recusandae soluta magnam fugiat, aspernatur saepe!</p>
+        <button id="btn">Show/Hide</button>
+    </div>
+
+
+    <script>
+        const btn = document.getElementById('btn');
+        const para = document.getElementById('para');
+
+        btn.addEventListener('click',() => {
+            para.classList.toggle('hide');
+        })
+        // function toggleHide(){
+        //     const para = document.getElementById('para');
+        //     para.classList.toggle('hide');
+        // }
+        // const btn = document.getElementById('btn');
+        // btn.addEventListener('click', toggleHide());
+    </script>
+</body>
+</html>

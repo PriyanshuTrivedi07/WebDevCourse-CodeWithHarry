@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amit Fitness</title>
+    style
+        include ../static/style.css
+
+</head>
+
+<body>
+    <header class="head">
+
+        <div class="left">
+            <!--left box for logo -->
+            <img src="/static/img/dumbbell-35686.png" alt="logo">
+            <div>AMIT FITNESS</div>
+
+        </div>
+        <div class="mid">
+            <!--mid box for navbar -->
+            <ul class="navbar">
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Pricing</a></li>
+                <li><a href="/">Gallery</a></li>
+                <li><a href="/">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!--right box for buttons -->
+            <button class="btn">JOIN US</button>
+            <button class="btn">EMAIL US</button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join The Best Gym Of ETAWAH Now !</h1>
+        <hr>
+        <form action="/" method="post" id="contact">
+            <div class="formgroup">
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="age" id="age" placeholder="Enter your Age">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="gender" id="gender" placeholder="Enter your Gender">
+            </div>
+            <div class="formgroup">
+                <!-- <input type="text" placeholder="Enter your City"> -->
+                <textarea name="address" id="address" cols="30" rows="4" placeholder="Address"></textarea>
+            </div>
+            <!-- <div class="formgroup">
+                <input type="text" placeholder="Enter your Mobile No.">
+            </div> -->
+            <div>
+                <button class="submit">SUBMIT</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

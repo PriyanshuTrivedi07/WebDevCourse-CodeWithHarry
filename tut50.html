@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javasript String functions</title>
+</head>
+
+<body>
+
+
+    <script>
+        var string = "This is a string";
+        console.log(string);
+
+
+
+        // 1. indexOf() : it return the first occurence of  sub-string 
+        var position = string.indexOf('is');
+        console.log(position);
+
+        // 2. lastIndexOf() : it return the first occurence of  sub-string 
+        var position = string.lastIndexOf('is');
+        console.log(position);
+
+        // 3. slice() : it return sub-string of a string
+        var substr = string.slice(1, 7); // slice  can also take negative values
+        console.log(substr);
+        // substring()
+        var substr = string.substring(1, 7) //substring doesnot take negative value
+        console.log(substr)
+
+        // 4. substr() : it returns the sub-string  || 
+        var substr1 = string.substr(1, 5) // the first argument takes the starting index  and second parameter takes the length
+        console.log(substr1) //this goes from 1 upto given length
+
+        // 5. replace() : it replace the string with the given string
+        var replace = string.replace("this", "Priyanshu")
+        console.log(string) //this function doesn't replace the original string
+        console.log(replace)
+
+
+        // 6. toUpperCase() & toLowerCase() : these function converts the string to uppercase & to lowercase respectively
+        console.log(string.toUpperCase())
+        console.log(string.toLowerCase())
+
+        // 7. concat() : it concat the two strings
+
+        // var newstr = string.concat(" we can also concat the strings");
+        // console.log(newstr)
+        var newstring1 = " and this is a new string";
+        var concatstr = string.concat(newstring1)
+        console.log(concatstr)
+
+        //8. trim() : this function remove the whitespaces from start and end only
+        var strwithWhitespace = "          this contains       whitespace     "
+        console.log(strwithWhitespace)
+        console.log(strwithWhitespace.trim())
+        
+
+
+    </script>
+</body>
+
+</html>
